@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* paleta de cores 
+
+azul
+branco
+vermelo
+*/
+
+
+:root {
+    --cor-fundo: #f0f0f0;
+    --cor-texto: #d22727;
+    --cor-destaque: #007bff;
+}
