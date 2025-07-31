@@ -2,14 +2,92 @@
 
 /* paleta de cores 
 
-azul
-branco
-vermelo
+    azul #1263bb
+    amarelo #edce1e
+    vermelho #c62a2a
 */
 
+.pulse {
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    font-variation-settings: 'wght' 100;
+  }
+  50% {
+    font-variation-settings: 'wght' 700;
+  }
+  100% {
+    font-variation-settings: 'wght' 100;
+  }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
 
 :root {
     --cor-fundo: #f0f0f0;
-    --cor-texto: #d22727;
-    --cor-destaque: #007bff;
+    --cor-texto: #7d5bd4f1;
+    --cor-destaque: #231735;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor-destaque);
+}
+
+section#login {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: var(--cor-texto);
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.533);
+    transition: .3s ease-in-out;
+}
+
+
+div#imagem {
+    display: block;
+    height: 200px;
+    background-image: url(../imagens/pexels-suzyhazelwood-1629236.jpg);
+    background-position: center left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#formulario {
+    display: block;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario > h1 {
+    text-align: center;
+    padding: 5px;
+    color: var(--cor-destaque);
+}
+
+#formulario > p {
+    text-align: center;
+    font-size: 1.2em;
 }
